@@ -1,14 +1,13 @@
 <?php
-function Palindrome($MyString) {
-  $revString = strrev($MyString);
-  if ($revString == $MyString){
-    echo $MyString." is a Palindrome string.","<br>";
-  } else {
-    echo $MyString." is not a Palindrome string.","<br>";
-  }
+function pdrome($s)
+{
+    $rs= strrev($s);
+    if($rs==$s)
+    echo ("$s is a palindrome<br>");
+    else
+    echo ("$s is not a palindrome<br>");
 }
-
-Palindrome("radar");
-Palindrome("rubber");
-Palindrome("malayalam");
+pdrome("apple");
+pdrome("mom");
+pdrome("madam");
 ?>
